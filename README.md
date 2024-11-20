@@ -11,9 +11,9 @@ mine: curl -X GET "http://127.0.0.1:[port]/mine?miner_address=Miner123"
 
 blockchain: curl -X GET http://127.0.0.1:[port]/chain
 
-check- balances : curl -X GET http://127.0.0.1:5000/balance/
-curl -X GET http://127.0.0.1:5000/balance/
-curl -X GET http://127.0.0.1:5000/balance/
+check- balances : curl -X GET http://127.0.0.1:[port]/balance/
+curl -X GET http://127.0.0.1:[port]/balance/
+curl -X GET http://127.0.0.1:[port]/balance/
 
 add-peer: curl -X POST http://127.0.0.1:[port]/add_peer -H "Content-Type: application/json" -d "
 {\"peer\": \"http://127.0.0.1:[port]\", \"secret\": \"my_secret\"}"
