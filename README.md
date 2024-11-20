@@ -1,5 +1,5 @@
 # Blockchain
-A simple DLT problem for my college project
+A simple DLT project for my college project
 
 #Working:
 run the app using python node.py
