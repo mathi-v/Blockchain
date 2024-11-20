@@ -15,6 +15,8 @@ check- balances : curl -X GET http://127.0.0.1:[port]/balance/
 curl -X GET http://127.0.0.1:[port]/balance/
 curl -X GET http://127.0.0.1:[port]/balance/
 
+pending transactions : curl http://127.0.0.1:[port]/pending_transactions
+
 add-peer: curl -X POST http://127.0.0.1:[port]/add_peer -H "Content-Type: application/json" -d "
 {\"peer\": \"http://127.0.0.1:[port]\", \"secret\": \"my_secret\"}"
 
@@ -23,4 +25,7 @@ PoW used = Longest Chain;
 mining is done;
 no complex Smart Contract is used as the project is meant to be kept simple;
 Sha-256 is used to calculate the hash for the block.
+The miner is rewared with an arbitrary value of 100 for mining;
+simply, the peers are availed with balances of 100, in actual implementation of the project we can improvise the system.
+
 
